@@ -11,9 +11,9 @@ module.exports = {
     output: {
         path: Path.resolve(__dirname, '../lib'),
         clean: true,
-        filename: 'alike-ui.umd.min.js',
+        filename: 'chenyi-alike-ui.umd.min.js',
         library: {
-            name: 'alike-ui',
+            name: 'chenyi-alike-ui',
             type: 'umd',
             export: 'default',
             umdNamedDefine: true
@@ -71,7 +71,7 @@ module.exports = {
     plugins: [
         new VueLoaderPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'alive-ui.css'
+            filename: 'chenyi-alike-ui.css'
         })
     ],
     resolve: {

@@ -1,8 +1,8 @@
 {
   "name": "chenyi-alike-ui",
-  "version": "1.0.1",
-  "description": "alike-ui of webpack vue library",
-  "main": "lib/alike-ui.umd.min.js",
+  "version": "1.0.2",
+  "description": "chenyi-alike-ui of webpack vue library",
+  "main": "lib/chenyi-alike-ui.umd.min.js",
   "scripts": {
     "serve": "webpack serve --open --config ./build/webpack.dev.js",
     "build": "webpack --config ./build/webpack.prod.js",
@@ -10,8 +10,7 @@
     "lib": "webpack --config ./build/webpack.lib.js"
   },
   "keywords": [
-    "chenyi",
-    "alike-ui"
+    "chenyi-alike-ui"
   ],
   "author": "lead_chenyi",
   "private": false,
