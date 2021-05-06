@@ -12,8 +12,17 @@ module.exports = {
         filename: '[name].[chunkhash:16].bundle.js',
         assetModuleFilename: "static/[hash][ext][query]"        // 内置 file-loader
     },
+    devServer: {
+        proxy: {
+            '/api': {
+                target: 'http://jsonplaceholder.typicode.com',
+                ws: true,
+                changeOrigin: true
+            }
+        }
+    },
     resolve: {
-        extensions: ['.vue','.js','.ts','.json'],               // 尝试按顺序解析这些后缀名（能够使用户在引入模块时不带扩展）
+        extensions: ['.vue', '.js', '.ts', '.json'],               // 尝试按顺序解析这些后缀名（能够使用户在引入模块时不带扩展）
         alias: {
             '@': Path.resolve(__dirname, '../src'),
             '~': Path.resolve(__dirname, '../src/assets/')
@@ -64,8 +73,8 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             template: './public/index.html',
-            favicon:'./public/favicon.ico',
-            hash:true,
+            favicon: './public/favicon.ico',
+            hash: true,
             chunks: ['main'],
             title: 'index',
             filename: 'index.html',
