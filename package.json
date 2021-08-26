@@ -1,6 +1,6 @@
 {
   "name": "chenyi-alike-ui",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "chenyi-alike-ui of webpack vue library",
   "main": "lib/chenyi-alike-ui.umd.min.js",
   "scripts": {
